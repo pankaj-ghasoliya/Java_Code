@@ -30,3 +30,40 @@ class HelloWorld {
         }
     }
 }
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+..................................................................   Another Example .......................................................
+--------------------------------------------------------------------------------------------------------------------------------------------
+    
+  // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+     
+        // Scanner class
+        System.out.println("Please enter the row number -");
+        int row = scannerMethod();
+        System.out.println("Row number - "+ row);
+        
+        System.out.println("Please enter the column number -");
+        int col = scannerMethod();
+        System.out.println("Col number - "+ col);
+        
+        create2DArray(row, col);
+    }
+    
+    
+    private static int scannerMethod() {
+        
+        Scanner sc = new Scanner(System.in);
+        int inputInteger = sc.nextInt();
+        return inputInteger;
+        
+    }
+    
+    private static void create2DArray(int row, int col) {
+        int[][] nuumber = new int[row][col];
+    }
+}
